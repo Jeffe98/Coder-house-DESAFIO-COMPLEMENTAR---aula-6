@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Endividado </title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+
+  <body>
+    <figure id="AreaLogo">
+        <div ><img src="img/logo-final-endividado.png" alt="Endividado" id="logo"></div>
+    </figure>
+
+
+    <div id="area" class="text-monospace h1 font-weight-bold " > Simulador de Empréstimos </div>
+
+    <div id="AreaCalculo">
+        <div id="infos" >
+            <h3 class="text-center font-weight-bold">Parâmetros do cálculo:</h3><br>
+            <span class="h3 font-weight-bold ">Valor do empréstimo:</span><input type="number" name="" id="valor"><br><br>
+            <span class="h3 font-weight-bold">Número de parcelas:</span><input type="number" name="" id="parcela"><br><br>
+            <span class="h3 font-weight-bold ">Valor da taxa de juros:</span><input type="number" name="" id="juros"><br><br>
+            <input type="button" value="Calcular" id="button" class="text-monospace" onclick="calcular()">
+        </div>
+
+        <div id="separador"></div>
+
+        <div id="AreaResultado">
+
+                <h3 class="text-center font-weight-bold">Resultado:</h3>
+
+            <table class="text-center" id="lista">
+                <tr>
+                    <th>#</th>
+                    <th>Valores das Parcelas</th>
+                    <th>Juros</th>
+                    <th>Saldos Devedores</th>
+                </tr>
+            </table>
+
+        </div>
+        
+        <footer>
+            <p class="text-center font-weight-bold">2023 Endividado - todos os direitos reservados</p>>
+            
+        </footer>
+    </div>
+
+     
+    <script type="text/javascript" src="script.js" defer></script>
+  </body>
+
+</html>
