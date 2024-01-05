@@ -5,6 +5,9 @@
 
 body{
     background-image: url(img/dolar2.jpg);
+    background-attachment: fixed;
+    position: relative;
+        
 }
 
 
@@ -68,6 +71,12 @@ body{
 
 }
 
+#AreaResultado{
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 500px;
+    max-width: 95%;
+}
 #AreaResultado, h3{
     color: #660a03dd;
 }
